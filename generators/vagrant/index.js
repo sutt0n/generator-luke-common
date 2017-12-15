@@ -141,7 +141,7 @@ module.exports = baseGenerator.extend(
 
 				_.each( staticFilenames, function( fn ) {
 
-					console.log("\n\n--> " + fn);
+					me.log("\n\n--> " + fn);
 					me.fs.copy(
 						me.templatePath( "core/env/vagrant/_" + fn ), me.destinationPath( "env/vagrant/" + fn )
 					);
